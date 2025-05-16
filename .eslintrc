@@ -1,0 +1,41 @@
+{
+  "root": true,
+  "parser": "@typescript-eslint/parser", // Use the TypeScript parser
+  "parserOptions": {
+    "ecmaVersion": "latest", // Use latest ECMAScript features
+    "sourceType": "module", // Allow use of import/export
+    "ecmaFeatures": {
+      "jsx": true // Enable JSX for React
+    },
+    "project": "./tsconfig.json" // Optional: better TypeScript rules
+  },
+  "env": {
+    "browser": true,
+    "es2021": true // Enables ES2021 globals
+  },
+  "settings": {
+    "react": {
+      "version": "detect" // Automatically detect React version
+    }
+  },
+  "plugins": [
+    "react",
+    "react-hooks",
+    "jsx-a11y",
+    "@typescript-eslint",
+    "prettier"
+  ],
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:react-hooks/recommended",
+    "plugin:jsx-a11y/recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:prettier/recommended"
+  ],
+  "rules": {
+    // Your custom rules here (optional)
+    "react/react-in-jsx-scope": "off",
+    "prettier/prettier": 1 // show Prettier issues as ESLint errors
+  }
+}
