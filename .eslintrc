@@ -34,8 +34,7 @@
     "plugin:prettier/recommended"
   ],
   "rules": {
-    // Your custom rules here (optional)
     "react/react-in-jsx-scope": "off",
-    "prettier/prettier": 1 // show Prettier issues as ESLint errors
+    "prettier/prettier": 1
   }
 }
